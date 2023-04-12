@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PowerBall Lotto</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="justify-content-center align-center">
+      <div class="ball white">P</div>
+      <div class="ball white">O</div>
+      <div class="ball white">W</div>
+      <div class="ball white">E</div>
+      <div class="ball white">R</div>
+      <div class="ball red text-white">BALL</div>
+    </header>
+    <!-- Nav Section -->
+
+    <nav class="container-fluid white align-center">
+      <div>POWERBALL</div>
+      <div class="ml-auto">Current Jackpot: 20.5M</div>
+    </nav>
+    <!-- Power Balls -->
+    <div class="backdrop">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="ball white number">2</div>
+          <div class="ball white number">45</div>
+          <div class="ball white number">15</div>
+          <div class="ball white number">34</div>
+          <div class="ball white number">25</div>
+          <div class="ball red text-white number">28</div>
+        </div>
+      </div>
+      <!-- Button -->
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <input type="button" value="Draw Lotto Numbers" class="btn w-400" />
+        </div>
+      </div>
+
+      <!-- Form -->
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <form action="">
+            <h2>How many tickets would you like?</h2>
+            <label for="tickets">Tickets</label>
+            <input type="text" id="tickets" />
+            <input type="submit" value="Submit" class="btn" id = "drawtickets" />
+          </form>
+        </div>
+        <ul id="ul"></ul>
+      </div>
+    </div>
+    
+    <script type="module" src="./lotto.js"></script>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
